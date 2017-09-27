@@ -17,7 +17,6 @@ export class QuotesService {
 
     this.subject.next(this.favoriteQuotes);
   }
-
   removeQuoteToFavorites(quote: Quote) {
     const p = this.favoriteQuotes.findIndex((quoteEl: Quote) => quote.id === quoteEl.id);
     this.favoriteQuotes.splice(p, 1);
